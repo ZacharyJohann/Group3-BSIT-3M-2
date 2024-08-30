@@ -1,0 +1,202 @@
+
+body {
+    background-color: #f5f5dc; 
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+.navbar {
+    background-color: #6e5849; 
+    overflow: hidden;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    position: relative; 
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background-color: #bcae9b; 
+}
+
+#profile {
+    width: 90%;
+    background-color: #f2e4d0; 
+    border: 2px solid #c7b299; 
+    margin: 20px auto;
+    border-radius: 10px;
+    padding: 40px;
+    text-align: center;
+    position: relative; 
+    z-index: 5; 
+}
+.names {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+    flex-wrap: wrap;
+    position: relative; 
+    z-index: 5; 
+    
+}
+
+.names p{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.names p:hover{
+    color: #111;
+}
+
+.names div {
+    margin: 0 20px;
+    cursor: pointer;
+    text-align: center;
+    padding: 5px;
+    height: 180px;
+    width: 210px;
+    position: relative; 
+}
+
+.names div img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    border: 5px solid #bcae9b;
+}
+
+.names div:hover {
+    opacity: 0.8;
+}
+
+.member-info {
+    display: none;
+    padding: 15px;
+    background-color: #f2e4d0; 
+    border: 2px solid #c7b299; 
+    border-radius: 10px;
+    margin: 16px auto;
+    width: calc(100% - 32px);
+    text-align: left;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.5s ease;
+    position: relative; 
+    z-index: 1;
+}
+
+.member-info.show {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+canvas {
+    margin-top: 20px;
+    max-width: 400px;
+    max-height: 300px;
+    width: 100%; 
+    height: auto; 
+}
+
+h1, h2, p {
+    text-align: center;
+    color: #6e5849; 
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+
+.login-form {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.login-form input {
+    padding: 5px;
+    margin-right: 5px;
+}
+
+.login-form button {
+    padding: 5px;
+}
+.navbar {
+    position: relative; 
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #333; 
+    overflow: hidden; 
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 14px 20px;
+}
+
+.navbar a:hover {
+    background-color: #575757;
+}
+
+.navbar-login {
+    position: absolute;
+    right: 10px; 
+    top: 50%;
+    transform: translateY(-50%);
+    margin-right: 30px;
+}
+
+.navbar-login button {
+    background-color: #4CAF50; 
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.navbar-login button:hover {
+    background-color: #45a049; 
+}
+
+input {
+ height: 25px;
+ font-size: 17px;
+ margin-right: 10px;
+}
+
+#contact {
+    width: 10%;
+    background-color: #f2e4d0; 
+    border: 2px solid #c7b299; 
+    margin: 20px auto;
+    border-radius: 10px;
+    padding: 40px;
+    text-align: center;
+    position: relative; 
+    z-index: 5; 
+}
+
+#contact a {
+    color: #6e5849;
+  }
+  
+#contact a:visited {
+    color: #6e5849;
+  }

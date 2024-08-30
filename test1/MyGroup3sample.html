@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Group 3</title>
+    <link href="stylessample.css" rel="stylesheet"/>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="navbar">
+        <a href="#home">Home</a>
+        <a href="#profile">Profile</a>
+        <a href="#contact">Contact</a>
+        <div id="navbar-login" class="navbar-login">
+            <form action="login.php" method="post">
+                <input type="text" name="username" placeholder="Username" required minlength="3" maxlength="50">
+                <input type="password" name="password" placeholder="Password" required minlength="3">
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="profile">
+        <h1><b>GROUP PROFILE</b></h1>
+
+    
+        <div class="names">
+            <div>
+                <img src="raf.jpeg" alt="Raf">
+                <p onclick="showInfo('rafael')">Rafael Alvin</p>
+            </div>
+            <div>
+                <img src="eric.jpg" alt="Eric">
+                <p onclick="showInfo('eric')">John Eric</p>
+            </div>
+            <div>
+                <img src="chris.jpeg" alt="Christian">
+                <p onclick="showInfo('jason')">Christian Jason</p>
+            </div>
+            <div>
+                <img src="ro.jpeg" alt="Ro">
+                <p onclick="showInfo('roanne')">Roanne Christine</p>
+            </div>
+            <div>
+                <img src="zach.jpg" alt="Zach">
+                <p onclick="showInfo('zachary')">Zachary Johann</p>
+            </div>
+        </div>
+
+      
+        <div id="rafael" class="member-info">
+            <h2>Leader: Rafael Alvin</h2>
+            <p>Hi my name is Rafael Alvin M. Regondola. I am 20 years old and I live in Barangay Langgam San Pedro Laguna and I'm currently studying at 
+                Pamantasan Lungsod ng Muntinlupa. My hobby is playing online games, watching movies, listening to songs and singing and dancing sometimes.
+                When it comes to computer languages, I can only remember the lessons that we have tackled before in our previous year.</p>
+                <b>Full name :</b> Regondola, Rafael Alvin M.
+    </br>
+    <b> Age:</b> 20
+    </br>
+    <b> Birthday:</b> 05/28/2004
+    </br>
+    <b> Height:</b> 5'11
+    </br>
+    <b> Address:</b> Brgy. Langgam San Pedro Laguna
+    </br>
+           
+            <canvas id="rafaelChart"></canvas>
+        </div>
+
+        <div id="eric" class="member-info">
+            <h2>Member: John Eric</h2>
+            <p>Hi guys my name is John Eric Lara, Rañada. My age is 22 . And I live in San Pedro Laguna currently studying at Pamantasan Lungsod ng Muntilupa. 
+                My hobby is reading books and playing online games.</p>
+                </br>
+            </br>
+            <b>Full name :</b> Rañada, John Eric L.
+            </br>
+            <b> Age:</b> 22
+            </br>
+            <b> Birthday:</b> 10/22/2001
+            </br>
+            <b> Height:</b> 5'7
+            </br>
+            <b> Address:</b> Bayan Bayanan San Vicente, phase 5, San Pedro city of Laguna
+            </br>
+           
+            <canvas id="ericChart"></canvas>
+        </div>
+
+        <div id="jason" class="member-info">
+            <h2>Member: Christian Jason</h2>
+            <p>Greetings, I am Christian Jason Oh currently an BSIT student at Pamantasan Lungsod ng Muntinlipa with an age of 22, which is kind of far 
+                from my home in San Pedro Laguna. My hobbies are playing games, reading manga, and watching animes.</p>
+                <b>Full name :</b> Oh Christian Jason H.
+            </br>
+            <b> Age:</b> 22
+            </br>
+            <b> Birthday:</b> 07/27/2002
+            </br>
+            <b> Height:</b> 5'8
+            </br>
+            <b> Address:</b> 269B J.P Rizal St. Magsaysay San Pedro Laguna
+            </br>
+           
+            <canvas id="jasonChart"></canvas>
+        </div>
+
+        <div id="roanne" class="member-info">
+            <h2>Member: Roanne Christine</h2>
+            <p>Hey there! I'm Roanne Christine, a 20 year old born on October 2, 2003. I may be 4'11", but I promise I bring a lot of energy to the table. 
+                I live in Alabang Muntinlupa City. My hobbies are building puzzle, any kinds of puzzle will do, watching series and anime, playing mobile games and working. 
+                Talking about my knowledge in computer language, I rate myself 8/10 in java, I studied java 2yrs in senior high that's why. 
+                While on other languages I think 5/10. except c++ since it is almost like java. 
+                So I'm rooting from this subject/teacher to help me.</p>
+                <b> Age:</b> 20
+    </br>
+    <b> Birthday:</b> 10/02/2003
+    </br>
+    <b> Height:</b> 4'11
+    </br>
+    <b> Address:</b> 285 Montillano St. Alabang Muntinlupa City 
+    </br>
+            <canvas id="roanneChart"></canvas>
+        </div>
+
+        <div id="zachary" class="member-info">
+            <h2>Member: Zachary Johann</h2>
+            <p>Hi, I am Zachary Johann, A 3rd year BSIT student at Pamantasan ng Lungsod ng Muntinlupa.     
+                    I don't have any hobbies, I usually just play games or just sleep all day. When it comes to being 
+                    knowledgeable in computer languages, I only know a few because I have a hard time trying to memorize 
+                    different kinds of computer languages, so I hope to learn alot from this course.</p>
+                    <b>Full name :</b> Nataño Zachary Johann M.
+        </br>
+        <b> Age:</b> 20
+        </br>
+        <b> Birthday:</b> 12/04/2003
+        </br>
+        <b> Height:</b> 5'10
+        </br>
+        <b> Address:</b> #8 Mapua St. Phase 4 Pacita Complex San Pedro Laguna
+        </br>
+            <canvas id="zacharyChart"></canvas>
+        </div>
+    </div>
+
+    <div id="contact">
+        <h2>
+            Contacts
+        </h2>
+        <p>
+            <b>GitHub Accounts:</b>
+            </br>
+            <a href="https://github.com/Daichikleo20" target="_blank">Rafael Regondola</a>
+            </br>
+            <a href="https://github.com/Johnericranada22" target="_blank">Eric Rañada</a>
+            </br>
+            <a href="https://github.com/ChristianJasonOh" target="_blank">Christian Oh</a>
+            </br>
+            <a href="https://github.com/RoanneChristineMendoza" target="_blank">Roanne Mendoza</a>
+            </br>
+            <a href="https://github.com/ZacharyJohann" target="_blank">Zachary Nataño</a>
+            </br>
+            </br>
+            <b>LinkedIn Accounts:</b>
+            </br>
+            <a href="https://www.linkedin.com/in/kazuha-regondola-174126323/" target="_blank">Rafael Regondola</a>
+            </br>
+            <a href="https://ph.linkedin.com/in/john-eric-ra%C3%B1ada-09692b322" target="_blank">Eric Rañada</a>
+            </br>
+            <a href="https://ph.linkedin.com/in/christian-oh-a03128323" target="_blank">Christian Oh</a>
+            </br>
+            <a href="https://ph.linkedin.com/in/roanne-mendoza-37319b2aa" target="_blank">Roanne Mendoza</a>
+            </br>
+            <a href="https://www.linkedin.com/in/zachary-johann-nata%C3%B1o-9b9124323/" target="_blank">Zachary Nataño</a>
+        </p>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
